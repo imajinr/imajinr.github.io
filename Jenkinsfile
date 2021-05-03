@@ -18,6 +18,7 @@ pipeline {
                 }
             }
             steps {
+                agent
                 sh './scripts/deploy.sh'
             }
         }

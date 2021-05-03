@@ -1,16 +1,48 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+html, body {
+  @apply bg-black;
+  @apply text-white;
+  font-family: 'DM Sans', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  max-width: 1048px;
 }
 
-* {
-  box-sizing: border-box;
+.message-bubble {
+  position: relative;
+  border-radius: 1rem;
+  padding: 12px 16px;
+  background: red;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.message-bubble:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background: inherit;
+  border-bottom-left-radius: 15px;
+}
+
+.message-bubble:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 21px;
+  background: blue;
+  border-bottom-left-radius: 10px;
 }
