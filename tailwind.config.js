@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'im-blue-1': '#1891fc',
         'im-blue-2': '#00d1ff',
+        'im-purple-1': '##635bff'
       },
       fontFamily: {
         dmsans: ['DM Sans', 'sans-serif']

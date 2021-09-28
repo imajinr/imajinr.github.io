@@ -1,0 +1,8 @@
+.workTitle {
+  @apply text-6xl;
+  @apply font-bold;
+  @apply mb-10;
+  background: -webkit-linear-gradient(#635bff, #00d1ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

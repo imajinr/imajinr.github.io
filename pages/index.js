@@ -1,8 +1,13 @@
 import Head from 'next/head';
-import "../styles/Home.module.css";
-
+import style from "./index.module.css";
+console.log(style)
 const now = new Date();
 const year = now.getFullYear();
+
+// case study refs:
+// https://gits.id/
+// https://www.webarq.com/projects/sushi-tei
+// https://icehousecorp.com/work/bluebird/
 
 function HeaderLogo() {
   return (
@@ -29,10 +34,10 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-4">
           <div className="col-span-2">
             <h1 className="text-6xl font-bold mb-8">
-              <span className="block mb-6">Your imagination</span><span>We craft it into a reality</span>
+              <span className="block mb-6 text-im-blue-2">Your imagination</span><span>We craft it into a reality</span>
               </h1>
-            <p className="text-xl mb-6 text-gray-300">We are lorem ipsum sit amet dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button className="text-xl rounded-full border px-5 py-4 border-white hover:bg-im-blue-1 hover:border-im-blue-1 transition-colors">Chat With Us</button>
+            <p className="text-xl mb-6 text-gray-300">We are software-consulting company which has specialty in building and developing product for early-stage product. Our experienced engineers can build mobile or web-based solution for Your company.</p>
+            <a href="mailto:abdi.pratama@imajinr.com" className="inline-block text-xl rounded-full border px-5 py-4 border-white hover:bg-im-blue-1 hover:border-im-blue-1 transition-colors">Chat With Us</a>
           </div>
           <div className="col-span-1"></div>
         </div>
@@ -41,15 +46,15 @@ export default function Home() {
       <section className="py-16">
         <div className="grid grid-cols-5 gap-6">
           <div className="col-span-2">
-            <h2 className="text-4xl font-bold mb-10">Our Finest Craft</h2>
+            <h2 className={style.workTitle}>Our Finest Craft</h2>
             <h3 className="text-3xl font-bold mb-4">DeliverIT</h3>
 
             <p className="leading-8 text-xl mb-6">DeliverIT enables business to ship their packages across singapore. With various logistic partners, business could ship faster and cheaper.</p>
 
             <button className="text-xl rounded-full border px-5 py-4 border-white hover:bg-im-blue-1 hover:border-im-blue-1 transition-colors">See The Case</button>
           </div>
-          <div className="col-span-3">
-            <img src="/img-ui-dashboard.png" />
+          <div className="col-span-3 flex items-end">
+            <img src="/deliverit_1.png" />
           </div>
         </div>
       </section>
@@ -57,20 +62,20 @@ export default function Home() {
       <section className="py-16">
         <div className="mb-10">
           <h2 className="font-bold text-4xl text-center mb-4">Why us?</h2>
-          <p className="text-center text-xl text-gray-300">Lorem ipsum sit amet dolor</p>
+          <p className="text-center text-xl text-gray-300">Get to know on Why we are right partner for You</p>
         </div>
         <div className="grid grid-cols-3 gap-4">
           <div>
-            <h3 className="mb-4 text-center text-2xl font-bold">Very Talented Team</h3>
-            <p className="text-center text-xl">Lorem ipsum sit amet dolor</p>
+            <h3 className="mb-4 text-center text-2xl font-bold">Talented Team</h3>
+            <p className="text-center text-xl">With 12+ years combined experience in technology industry, We can bring high quality work to help you to deliver successful solution.</p>
           </div>
           <div>
             <h3 className="mb-4 text-center text-2xl font-bold">Best Practices</h3>
-            <p className="text-center text-xl">Lorem ipsum sit amet dolor</p>
+            <p className="text-center text-xl">We don't just build, but We craft it with best practices. Our engineers have proven experience in industry.</p>
           </div>
           <div>
             <h3 className="mb-4 text-center text-2xl font-bold">Collaborative</h3>
-            <p className="text-center text-xl">Lorem ipsum sit amet dolor</p>
+            <p className="text-center text-xl">We always keep effective communication in order to be in the right track and ultimately to able to deliver the desirable product.</p>
           </div>
         </div>
       </section>
@@ -78,20 +83,20 @@ export default function Home() {
       <section className="py-16">
         <div className="mb-10">
           <h2 className="font-bold text-4xl text-center mb-4">What we offer</h2>
-          <p className="text-center text-xl text-gray-300">Lorem ipsum sit amet dolor</p>
+          <p className="text-center text-xl text-gray-300">Different problem, different solution. Choose the right one for You</p>
         </div>
         <div className="grid grid-cols-3 gap-4">
           <div>
             <h3 className="mb-4 text-center text-2xl font-bold">Product Development</h3>
-            <p className="text-center text-xl">Lorem ipsum sit amet dolor</p>
+            <p className="text-center text-xl">We can turn your idea into a reality. Our experience and expertise could help you launch as fast as possible.</p>
           </div>
           <div>
             <h3 className="mb-4 text-center text-2xl font-bold">Team Scaling</h3>
-            <p className="text-center text-xl">Lorem ipsum sit amet dolor</p>
+            <p className="text-center text-xl">Need more help on shipping your product faster? We can give a hand. Our dedicated engineers can act as your team extension.</p>
           </div>
           <div>
             <h3 className="mb-4 text-center text-2xl font-bold">DevOps</h3>
-            <p className="text-center text-xl">Lorem ipsum sit amet dolor</p>
+            <p className="text-center text-xl">Your tech is growing? We can make your system handle high load and make your development process agile.</p>
           </div>
         </div>
       </section>
@@ -99,7 +104,6 @@ export default function Home() {
       <section className="py-16">
         <div className="mb-10">
           <h2 className="font-bold text-4xl text-center mb-4">What our clients said</h2>
-          <p className="text-center text-xl text-gray-300">Lorem ipsum sit amet dolor</p>
         </div>
         <div className="grid grid-cols-6 gap-4">
           <div className="col-start-2 col-span-4">
@@ -109,7 +113,7 @@ export default function Home() {
                   <div>
                     <img className="mx-auto" style={{ width: 72, height: 72 }} src="/leo-client.png" />  
                     <div className="mt-4 text-lg text-center">
-                      <p className="font-bold">Leon Harris</p>
+                      <p className="font-bold">Siew Loong Cheh</p>
                       <p className="text-gray-300">CEO, DeliverIT</p>
                     </div>
                   </div>
@@ -122,6 +126,16 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-16">
+        <div className="mb-10">
+          <h2 className="font-bold text-4xl text-center mb-4">Let's build together</h2>
+        </div>
+        <div className="text-xl text-center">
+          <p className="mb-6">If you are ready to start the project, or just having questions for us We are delighted to talk with You!</p>
+          <a href="mailto:abdi.pratama@imajinr.com" className="inline-block text-xl rounded-full border px-5 py-4 border-white hover:bg-im-blue-1 hover:border-im-blue-1 transition-colors">Chat Us Now</a>
+        </div>
+      </section>
       
       <footer class="pt-16 pb-8">
         <div className="mb-12 flex text-xl">
@@ -130,7 +144,7 @@ export default function Home() {
             <p>Jl. Kijang Utara III No. 13</p>
             <p>Palu 94231</p>
             <p>Indonesia</p>
-            <p>Tel +62 852 2557 5696</p>
+            <p>Tel +62 812-8189-8529</p>
           </div>
         </div>
 
