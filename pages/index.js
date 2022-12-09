@@ -111,16 +111,18 @@ export default function Home() {
               <div className="col-span-1">
                 <div className="flex justify-end">
                   <div>
-                    <img className="mx-auto" style={{ width: 72, height: 72 }} src="/leo-client.png" />  
+                    <div className="rounded-full">
+                      <img className="mx-auto rounded-full" style={{ width: 80, height: 80 }} src="/jin.jpeg" />  
+                    </div>
                     <div className="mt-4 text-lg text-center">
-                      <p className="font-bold">Siew Loong Cheh</p>
-                      <p className="text-gray-300">CEO, DeliverIT</p>
+                      <p className="font-bold">Lee Jin</p>
+                      <p className="text-gray-300">COO, Tictag.io</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-span-2 text-xl">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <div className="col-span-2 text-4xl italic">
+                <p>"Imajinr provides high-quality Indonesian talents"</p>
               </div>
             </div>
           </div>
@@ -137,14 +139,14 @@ export default function Home() {
         </div>
       </section>
       
-      <footer class="pt-16 pb-8">
+      <footer className="pt-16 pb-8">
         <div className="mb-12 flex text-xl">
           <div className="flex-1"></div>
           <div className="flex-1 text-right">
             <p>Jl. Kijang Utara III No. 13</p>
             <p>Palu 94231</p>
             <p>Indonesia</p>
-            <p>Tel +62 812-8189-8529</p>
+            <p>Tel/Whatsapp <a href="https://wa.me/6281281898529">+62 812-8189-8529</a></p>
           </div>
         </div>
 
